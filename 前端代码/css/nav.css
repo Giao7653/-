@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+}
+/* body{
+    overflow-x: auto;
+    overflow-y: hidden; 
+} */
+.father-head{
+    height: 56px;
+    width: 100%;
+}
+
+.head {
+    height: 56px;
+    /* line-height: 56px; */
+    float: left;
+    width: 100%;
+    /* background-image:url(../image/8.jpeg); */
+    background-color: rgb(48, 81, 100);
+    margin: 0 auto;
+    display: flex;
+    scroll-behavior: smooth;
+    align-items: center;
+    position:fixed;
+    z-index:1000;
+    top:0px;
+}
+.logo {
+    position: relative;
+    top: 0px;
+    left: 6px;
+    margin: 30px;
+}
+
+.head ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.head ul li{
+    line-height: 30px;
+}
+
+.head ul li:hover{
+    background-color: antiquewhite;
+}
+
+.head ul li a{
+    text-decoration: none;
+    padding-left: 16px;
+    /* padding: 30px; */
+    overflow: hidden; 
+}
+
+.box_title{
+    padding-left: 16px;
+    height: 32px;
+    font-size: 12px;
+    color: #ff7b5e;
+    line-height: 32px;
+    position: relative;
+}
+/* .nav_{
+    position: relative;
+    left: 60px;
+}
+.head ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.head li{
+    float: left;
+    list-style-type: none;
+    overflow: hidden;
+}
+.head li a{
+    text-decoration: none;
+    color: rgb(178, 207, 207);
+    padding:30px;
+    overflow: hidden; 
+}
+.head li a:hover {
+    animation: nav_ul 0.2s;
+    font-size: 18px;
+    color: rgb(62, 76, 76);
+} */
+
+.search{
+    position: absolute;
+    left: 600px;
+    /* margin: auto; */
+}
+.search input{
+    padding: 0 10px 0 45px;
+    width: 350px;
+    height: 30px;
+    border-radius: 24px;
+    border: 0ch;
+}
+
+.search .fa-search {
+    line-height: 20px;
+    position: absolute;
+    top: 52%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: rgb(0, 0, 0);
+    padding-right: 10px;
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+.search_box{
+    top: 43px;
+    left: 600px;
+    width: 403px;
+    height: 277px;
+    border: 1px solid red;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    border-radius: 0 0 10px 10px;
+    display: none;
+    position: absolute; 
+    z-index:9999;
+    background-color: white;
+    border: 1px solid rgb(255, 253, 253);
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%), 0 2px 4px 1px rgb(0 0 0 / 18%);
+}
+
+.hot_search{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.my_search{
+    height: 100%;
+}
+
+.clear_history{
+    cursor: pointer;
+    padding-left: 56px;
+    height: 32px;
+    font-size: 12px;
+    color: #000000;
+    line-height: 32px;
+    position: relative;
+}
+
+.dropdown .image{   
+    /* background-color: #4CAF50; */
+    color: white;
+    padding: 0;
+    font-size: 65px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown .image img{
+    border-radius: 50%;
+}
+  
+  /* 容器 <div> - 需要放置下拉内容 */
+  .dropdown {
+    /* height: 65px; */
+    position: relative;
+    display: inline-block;
+  }
+  
+  
+  /* 下拉内容（默认隐藏） */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: -14px;
+    /* height: 60px; */
+  }
+  
+  /* 下拉链接 */
+  .dropdown-content a {
+    color: black;
+    /* padding: 1px 40px; */
+    text-align: center;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* 悬停时更改下拉链接的颜色 */
+  .dropdown-content a:hover {background-color: #dbf0bb}
+  
+  /* 悬停时显示下拉菜单 */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a svg{
+    fill: #705555;
+    
+  }
+  .create{
+      font-weight: 900;
+    cursor:pointer;
+  }

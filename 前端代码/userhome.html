@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梗百科</title>
+    <link rel="stylesheet" href="css/userhome.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="father-head">
+        <div class="head" id="head">
+            <div class="logo">
+                <a href="index.html"><img src="./image/logo.png" width="45px" height="45px"></a>
+            </div>
+            <!-- <div class="nav_">
+                <ul class="nav">
+                    <li><a href="index.html" target="_black">首页</a></li>
+                    <li><a href="stemhome.html?page_num=1" target="_black">梗大全</a></li>
+                    <li><a href="talkhome.html" target="_black">吐槽广场</a></li>
+                </ul>
+            </div> -->
+            <div class="search">
+                <i class="fa fa-search" aria-hidden="true" id="search"></i>
+                <input type="text" placeholder="搜索ID,梗" id="searchStem" onkeydown="if(event.keyCode==13){search.click()}">
+             
+            </div>
+            <div class="search_box">
+                <div class="hot_search">
+                    <Label class="box_title">热门搜索</Label>
+                    <ul id="my_hot_search"></ul>
+                </div>
+                <div class="my_search">
+                    <label class="box_title">历史搜索</label>
+                    <label class="clear_history" id="clear_history">清空历史</label>
+                    <ul id="my_loacl_search"></ul>
+                </div>
+            </div>
+            <div class="index_login" id="login_box"></div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="create" id="create">
+                <span>创建词条</span>
+            </div>
+         
+        </div>
+    </div>
+        <div id="light" class="white_content">
+        <a class="close" href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">
+            <img src="image/close.png" alt="" width="20px">
+        </a>
+        <div class="login_box">
+            <div class="login_title">账号登陆</div>
+            <input type="text" placeholder="账号" id="username">
+            <br>
+            <input type="password" placeholder="密码" id="password">
+            <br>
+            <div class="tips" id="tips">123</div>
+            <div class="login_btn"><button id="login">登录</button></div>
+            <div class="login_bottom">
+                <div class="to_register"><a href="register.html" target="_black">点击注册</a></div> 
+            </div>
+            
+        </div>
+    </div> 
+    <div id="fade" class="black_overlay"></div>
+    <div class="main">
+        <div class="userinfo">
+            <div class="avatar" id="my_avatar"><img src="" alt=""></div>
+            <div class="nickname" id="my_username"></div>
+            <div class="otherInfo">
+                <table width="100%">
+                    <tr>
+                        <th>浏览量</th>
+                        <th>评论量</th>
+                    </tr>
+                    <tr>
+                        <th id="NumViews" style="font-weight: 500;"></th>
+                        <th id="NumComment" style="font-weight: 500;"></th>
+                    </tr>
+                    
+                </table>
+            </div>
+            <div id="caozuo">
+                <div class="updateavatar">
+                    <div class="txt">上传图片</div>
+                    <input type="file" class="file" value="上传文件" id="getavatar" name="getavatar">
+                </div><div class="avatar-btn">
+                <button id="update_avatar">
+                    <a href="javascript:" id="update_image">点击更换头像</a>
+                </button>
+            </div>
+            </div>
+          
+        </div>
+        <div class="baseinfo">
+            <div class="content" id="userinfo">
+                <div class="title">
+                    <img src="image/special-tag.png" width="30px" height="30px">
+                    个人信息
+                </div>
+                <hr>
+                <label>昵称</label>
+                <div id="nickname"><input type="text" placeholder=""></div>
+                <label>QQ邮箱</label>
+                <div id="email"><input type="text"></div>
+                <label>简介</label><br>
+                <div id="introduce"><textarea name="resume" cols="40" rows="4" maxlength="500" id="" placeholder=""></textarea></div>
+            </div>
+            <div class="user-btn" id="update_info"></div>
+        </div>
+        <div class="jieshao">
+            <span>我的创作</span>
+        </div>
+        <div class="activity-self" id="my_geng">
+
+        </div>
+        
+    </div>
+   
+</body>
+<script src="js/axios-0.18.0.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/md5.js"></script>
+<script src="js/nav.js"></script>
+<script type="text/javascript" src="js/userhome.js"></script>
+<script src="js/login.js"></script>
+</html>

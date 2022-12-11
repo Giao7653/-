@@ -1,0 +1,8 @@
+Django	3.2.9
+django-cors-headers
+mysqlclient
+pyjwt 1.7.1
+django-simple-captcha      0.5.14
+django-simpleui
+Pillow
+pinyin

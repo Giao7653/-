@@ -1,0 +1,314 @@
+body{
+    /* background-image: url(../image/bj.jpg);
+    background-size: 100% 100%; */
+    background-color: rgb(243, 218, 218);
+}
+
+.alert-info1{
+    background:rgba(97, 239, 149, 0.8);
+    color:#fff;
+    margin-top: -99px;
+}
+
+.main{
+    position: relative;
+    top: 80px;
+    width: 1139px;      
+    height: 100%;
+	margin: 0 auto;
+    box-shadow: 0px 0px 0px rgb(0 0 0 / 10%);
+}   
+
+.userinfo{
+    border-radius: 5%;
+    float: left;
+    width: 40%;
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 8%);
+    background-color: #fff;
+}
+
+.userinfo .avatar{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.userinfo .avatar img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.userinfo .nickname{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.userinfo .otherInfo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.userinfo .updateavatar{
+    margin: auto;
+    color :#fff;
+    text-shadow : none;
+    box-shadow :1px 1px 3px rgba(0,0,0,.2);
+    cursor :pointer;
+    width: 60%;
+    height: 28px;
+    position: relative;
+    border:1px solid #00b7ee;
+    background:#00b7ee;
+    margin-bottom: 5px;
+} 
+
+
+.userinfo .updateavatar .txt {
+   
+    float: left;
+    position: absolute;
+    margin-left: 42%;
+    top: 0px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    color : white;
+
+ 
+}
+.userinfo .updateavatar .file{
+    width: 100%;
+    height: 28px;
+    opacity:0.0;filter:alpha(opacity=0);
+    cursor: pointer;
+}
+.avatar-btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.avatar-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin: 20px 0px 20px 0px;
+}
+.avatar-btn button{
+    border: 0;
+    height: 28px;
+    background-color: rgb(144, 144, 144);
+    width: 60%;
+    box-shadow :1px 1px 3px rgba(0,0,0,.2);
+    margin-bottom: 5px;
+    
+    
+}
+
+.baseinfo{
+    margin-left: 3%;
+    width: 57%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 8%);
+}
+
+.baseinfo .content{
+    margin-left: 10%;
+    width: 80%;
+}
+
+.baseinfo .content .title{
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.baseinfo .content input{
+    display: block;
+    width: 95%;
+    height: 25px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.baseinfo .content label{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.baseinfo .content textarea{
+    font-family: inherit;
+    display: block;
+    width: 95%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.baseinfo #user-btn{
+    height: 40px;
+    background-color: #008CBA;/* 蓝色 */
+    border-radius: 5%;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+#user-btn a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+.baseinfo .user-btn button{
+    text-align: center;
+    margin-left: 43%;
+    margin-top: 10px;
+    width: 100px;
+    height: 45px;
+    /* background-color: #92a5ab; */
+}
+.geng-talk {
+    display:flex;
+    width: 10%;
+    height: 20px;
+    position: relative;
+    float: left;
+    top: 600px;
+    border-radius: 2%;
+    background-color: aqua;
+}
+.jieshao span{
+    font-size: x-large;
+    font-family: "黑体";
+    font-weight: 900;
+    height: auto;
+    width: auto;
+}
+.activity-self{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+.activity-hr{
+    position: relative;
+    border-style:dashed;
+    margin-bottom: 24px;
+    color: rgb(231, 168, 168);
+    /* top: 10px; */
+}
+.activity-self .geng-part{
+    height: 500px;
+    width: 330px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    position: relative;
+    margin-left: 2.5%;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.activity-self .geng-part:hover{ 
+    box-shadow: 0 2px 10px rgb(0 0 0 / 50%);
+    transform: scale(1.01);
+    transition: 0s;
+    overflow: hidden;
+}
+.activity-self .geng-part .topic{
+    position: relative;
+    top: 10px;
+    border-style:solid;
+    border-width: 5px;
+    border-color: brown;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    margin: 0px 10px;
+    padding: 0px 10px;
+    float: left;
+}
+
+.activity-self a{
+    text-decoration: none;
+    color: black;
+}
+
+.activity-self .topic{
+    font-size: 22px;
+}
+
+.activity-self .introduce{
+    /* border-style: dashed; */
+    white-space: pre-line;
+    height: auto;
+    font-size: 17px;
+    float: left;
+    position: relative;
+    top: 20px;
+    padding: 0px 10px;
+    word-wrap:break-word;  
+    word-break:break-all;  
+    overflow: hidden; 
+}
+.activity-self >div .img{
+    /* border-style: dashed; */
+    float: left;
+    height: 30%;
+    position: relative;
+    top: 10%;
+    padding: 0px 10px;
+    overflow: hidden; 
+}
+.activity-self >div .linkof{
+    /* border-style: dashed; */
+    float: left;
+    height: 10%;
+    font-size: 10px;
+    position:relative;
+    top: 10%;
+    left: 20px;
+}
+.activity-self .geng-part3-item .linkof{
+    position: relative;
+    top: 10%;
+}
+.activity-self .geng-part11-item .introduce{
+    position: relative;
+    top: 25%;
+}
+.activity-self .linkof img{
+    width: 250px;
+    text-align: center;
+    /* height: 100%; */
+}
+.geng-low{
+    min-width: 100%;
+    align-self:end;
+    vertical-align: bottom;
+    display: flex;
+    min-height: 50px;
+    height: 50px;
+    width: 100%;
+}
+.user-btn{
+    cursor:pointer
+}

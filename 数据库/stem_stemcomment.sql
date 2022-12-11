@@ -1,0 +1,15 @@
+INSERT INTO `stem_stemcomment` VALUES (1, '123456', '科幻片啊', '2022-12-6 04:25:10', 2, 0, 0, '7k7k');
+INSERT INTO `stem_stemcomment` VALUES (2, 'heyubi', '111', '2022-12-6 05:10:47', 6, 0, 0, 'HelloWorld');
+INSERT INTO `stem_stemcomment` VALUES (3, '123456', '老师菜菜捞捞', '2022-12-7 05:26:22', 21, 0, 0, '7k7k');
+INSERT INTO `stem_stemcomment` VALUES (4, '123456', '哈哈哈', '2022-12-7 05:54:49', 31, 0, 0, '7k7k');
+INSERT INTO `stem_stemcomment` VALUES (5, 'heyubi', '急死了', '2022-12-7 07:55:38', 38, 0, 0, 'bilibili');
+INSERT INTO `stem_stemcomment` VALUES (6, 'heyubi', '333', '2022-12-7 10:15:32', 8, 0, 0, 'bilibili');
+INSERT INTO `stem_stemcomment` VALUES (7, 'heyubi', '222', '2022-12-7 10:15:38', 8, 0, 0, 'bilibili');
+INSERT INTO `stem_stemcomment` VALUES (8, 'heyubi', '111', '2022-12-7 10:16:45', 38, 0, 0, 'bilibili');
+INSERT INTO `stem_stemcomment` VALUES (9, '123456', '666', '2022-12-7 12:38:16', 38, 0, 0, '7k7k');
+INSERT INTO `stem_stemcomment` VALUES (10, 'heyubi', '冯豪160', '2022-12-8 04:14:56', 8, 0, 0, 'bilibili');
+INSERT INTO `stem_stemcomment` VALUES (11, '1234567', '666', '2022-12-8 14:02:01', 38, 0, 0, 'HelloWorld');
+INSERT INTO `stem_stemcomment` VALUES (12, 'heyubi', '好的', '2022-12-9 06:57:52', 12, 0, 0, 'bilibili');
+INSERT INTO `stem_stemcomment` VALUES (13, '123456', '测试', '2022-12-9 07:57:14', 39, 0, 0, '7k7k');
+INSERT INTO `stem_stemcomment` VALUES (14, '123456', '哈哈哈', '2022-12-9 08:12:06', 40, 0, 0, '7k7k');
+INSERT INTO `stem_stemcomment` VALUES (15, '123456', '测试2', '2022-12-10 11:56:33', 39, 0, 0, '7k7k');

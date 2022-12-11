@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梗百科</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/lunbotu.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <div class="father-head">
+        <div class="head" id="head">
+            <div class="logo">
+                <a href="index.html"><img src="./image/logo.png" width="45px" height="45px"></a>
+            </div>
+            <!-- <div class="nav_">
+                <ul class="nav">
+                    <li><a href="index.html" target="_black">首页</a></li>
+                    <li><a href="stemhome.html?page_num=1" target="_black">梗大全</a></li>
+                    <li><a href="talkhome.html" target="_black">吐槽广场</a></li>
+                </ul>
+            </div> -->
+            <div class="search">
+                <i class="fa fa-search" aria-hidden="true" id="search"></i>
+                <input type="text" placeholder="搜索ID,梗" id="searchStem" onkeydown="if(event.keyCode==13){search.click()}">
+             
+            </div>
+            <div class="search_box">
+                <div class="hot_search">
+                    <Label class="box_title">热门搜索</Label>
+                    <ul id="my_hot_search"></ul>
+                </div>
+                <div class="my_search">
+                    <label class="box_title">历史搜索</label>
+                    <label class="clear_history" id="clear_history">清空历史</label>
+                    <ul id="my_loacl_search"></ul>
+                </div>
+            </div>
+            <div class="index_login" id="login_box"></div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="create" id="create">
+                <span>创建词条</span>
+            </div>
+         
+        </div>
+    </div>
+    <div id="light" class="white_content">
+        <a class="close" href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">
+            <img src="image/close.png" alt="" width="20px">
+        </a>
+        <div class="login_box">
+            <div class="login_title">账号登陆</div>
+            <input type="text" placeholder="账号" id="username">
+            <br>
+            <input type="password" placeholder="密码" id="password">
+            <br>
+            <div class="tips" id="tips">123</div>
+            <div class="login_btn"><button id="login">登录</button></div>
+            <div class="login_bottom">
+                <div class="to_register"><a href="register.html" target="_black">点击注册</a></div> 
+            </div>
+            
+        </div>
+    </div> 
+    <div id="fade" class="black_overlay"></div> 
+    <div class="recommand">
+        <ul class="slides">
+          <input type="radio" id="control-1" name="control" checked>
+          <input type="radio" id="control-2" name="control">
+          <input type="radio" id="control-3" name="control">
+          
+          <!--  Left/Right Button  -->
+          <div class="navigator slide-1">
+            <label for="control-3">
+              <i class="fa fa-angle-left"></i>
+            </label>
+            <label for="control-2">
+              <i class="fa fa-angle-right"></i>
+            </label>
+          </div>
+          
+          <div class="navigator slide-2">
+            <label for="control-1">
+              <i class="fa fa-angle-left"></i>
+            </label>
+            <label for="control-3">
+              <i class="fa fa-angle-right"></i>
+            </label>
+          </div>
+          
+          <div class="navigator slide-3">
+            <label for="control-2">
+              <i class="fa fa-angle-left"></i>
+            </label>
+            <label for="control-1">
+              <i class="fa fa-angle-right"></i>
+            </label>
+          </div>
+          <!--  /Left/Right Button  -->
+          
+          <li class="slide"><img src="image/lb1.jpg" alt="" width="600px" height="310px" /></li>
+          <li class="slide"><img src="image/lb2.jpg" alt="" width="600px" height="310px" /></li>
+          <li class="slide"><img src="image/lb3.jpg" alt="" width="600px" height="310px" /></li>
+          
+          <div class="controls-visible">
+            <label for="control-1"></label>
+            <label for="control-2"></label>
+            <label for="control-3"></label>
+          </div>
+        </ul>
+        <div class="content">
+            <div class="top-search-part1">
+                <div class="top-search-part1-remen">今日推荐</div>
+           
+            </div>
+            <div class="top-search-part2" id="recommand">
+                <li><span>1</span><a>你这背景太假了</a></li>
+                <li><span>2</span><a>你这背景太假了</a></li>
+                <li><span>3</span><a>你这背景太假了</a></li>
+                <li><span>4</span><a>你这背景太假了</a></li>
+                <li><span>5</span><a>你这背景太假了</a></li>
+                <li><span>6</span><a>你这背景太假了</a></li>
+            </div>
+        </div>
+    </div>
+      <marquee style="position: absolute; z-index: 10;"><svg t="1670599932810" class="icon" viewBox="100 0 1024 760" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2710" width="30" height="30"><path d="M545.997 87.211c-14.95-7.031-32.597-4.71-45.295 5.837l-244.838 203.776-195.311-0.785c-11.23 0-22.050 4.437-30.003 12.39-8.021 7.953-12.561 18.773-12.561 30.106l-0.887 340.548c0 11.332 4.437 22.187 12.425 30.174 7.953 8.055 18.807 12.527 30.14 12.527h197.461l243.61 203.025c7.782 6.485 17.51 9.83 27.238 9.83 6.144 0 12.288-1.331 18.057-4.028 14.95-6.997 24.508-22.016 24.508-38.537v-766.327c0-16.486-9.557-31.505-24.542-38.537v0zM711.066 300.066c-20.992-9.933-45.943-0.887-56.149 20.002-10.172 20.958-1.365 46.319 19.456 56.798 2.697 1.399 66.458 34.543 66.458 128.922 0 100.83-59.631 134.246-61.611 135.339-21.026 10.513-29.559 36.113-19.046 57.139 7.509 14.95 22.494 23.552 38.161 23.552 6.383 0 12.902-1.434 18.978-4.471 4.437-2.253 108.646-56.183 108.646-211.558 0-149.914-110.217-203.503-114.893-205.722v0zM843.606 175.036c-19.627-12.595-45.67-6.861-58.505 12.732-12.766 19.593-7.168 45.943 12.356 58.846 4.608 3.038 113.664 77.346 113.664 262.315 0 185.378-104.619 259.755-108.783 262.588-19.593 13.073-24.849 39.458-11.81 59.051 8.192 12.288 21.709 18.944 35.465 18.944 8.090 0 16.316-2.355 23.586-7.168 5.973-3.959 146.671-100.42 146.671-333.449 0-233.472-146.398-329.865-152.644-333.858v0zM843.606 175.036z" p-id="2711"></path></svg><font size="5" color="red" style='margin-left:7px;'>通知：梗百科全新版本来袭，欢迎体验</font></marquee> 
+    <div class="geng" id="geng">
+        <!-- onclick="window.open('stem.html','_self')" -->
+        <!-- <div class="index_add"><button>点击加载更多内容</button></div> -->
+        
+    </div>
+</body>
+<script src='js/login.js'></script>
+<script src="js/index.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/axios-0.18.0.js"></script>
+<script src="js/index_add.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/md5.js"></script>
+</html>

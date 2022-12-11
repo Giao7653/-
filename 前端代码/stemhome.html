@@ -1,0 +1,169 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head >
+    <title>梗百科</title>
+    <link rel="stylesheet" href="css/stemhome.css" >
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/nav.css">
+       <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+  <body >
+    <div class="father-head">
+      <div class="head" id="head">
+          <div class="logo">
+              <a href="index.html"><img src="./image/logo.png" width="45px" height="45px"></a>
+          </div>
+          <!-- <div class="nav_">
+              <ul class="nav">
+                  <li><a href="index.html" target="_black">首页</a></li>
+                  <li><a href="stemhome.html?page_num=1" target="_black">梗大全</a></li>
+                  <li><a href="talkhome.html" target="_black">吐槽广场</a></li>
+              </ul>
+          </div> -->
+          <div class="search">
+              <i class="fa fa-search" aria-hidden="true" id="search"></i>
+              <input type="text" placeholder="搜索ID,梗" id="searchStem" onkeydown="if(event.keyCode==13){search.click()}">
+           
+          </div>
+          <div class="search_box">
+              <div class="hot_search">
+                  <Label class="box_title">热门搜索</Label>
+                  <ul id="my_hot_search"></ul>
+              </div>
+              <div class="my_search">
+                  <label class="box_title">历史搜索</label>
+                  <label class="clear_history" id="clear_history">清空历史</label>
+                  <ul id="my_loacl_search"></ul>
+              </div>
+          </div>
+          <div class="index_login" id="login_box"></div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="create" id="create">
+              <span>创建词条</span>
+          </div>
+       
+      </div>
+  </div>
+      <div id="light" class="white_content">
+        <a class="close" href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">
+            <img src="image/close.png" alt="" width="20px">
+        </a>
+        <div class="login_box">
+            <div class="login_title">账号登陆</div>
+            <input type="text" placeholder="账号" id="username">
+            <br>
+            <input type="password" placeholder="密码" id="password">
+            <br>
+            <div class="tips" id="tips">123</div>
+            <div class="login_btn"><button id="login">登录</button></div>
+            <div class="login_bottom">
+                <div class="to_register"><a href="register.html" target="_black">点击注册</a></div> 
+            </div>
+            
+        </div>
+    </div> 
+    <div id="fade" class="black_overlay"></div>
+   <div class="main">
+    <div class="main-top">
+    </div> 
+    <div class="definition" data-v-8e7c7520><!----> 
+      <div onmouseover="" class="full-card container full-card" data-v-07e5cb5e data-v-8e7c7520>
+        <div class="section card-header" data-v-07e5cb5e>
+          <div class="author" data-v-07e5cb5e>
+            <div class="badge" data-v-07e5cb5e id="avatar">
+            </div>
+             <div class="author-info" data-v-07e5cb5e><div class="badge-title note" data-v-07e5cb5e><!----> 
+              <span data-v-07e5cb5e>来自</span></div> <div class="author-name-container" data-v-07e5cb5e id="user">
+               
+              </div>
+            </div>
+          </div> 
+          <!--<div class="more-container" data-v-07e5cb5e>-->
+          <!--  <div class="more button" data-v-07e5cb5e>-->
+          <!--    <img src="image/more.png" href="更多" class="icon" data-v-07e5cb5e>-->
+          <!--  </div> <!---->
+          <!--</div>-->
+        </div> 
+        <div class="section card-middle" data-v-07e5cb5e>
+              <div class="title-container" data-v-07e5cb5e>
+                <div class="title-container-content" data-v-07e5cb5e>
+                  <div class="pinyin" id="pinyin"></div>
+                  <h1 class="title pre" data-v-07e5cb5e id="stem_title"></h1> 
+              
+                </div>
+              </div> 
+              <div class="basic-info note basic-info-rela" data-v-07e5cb5e>
+                  <div class="created basic-info-element" data-v-07e5cb5e id="create_time">
+                  
+                  </div> <!----> 
+                  <div class="view-container" data-v-07e5cb5e>
+                    <img src="image/view.png" href="浏览量" class="basic-info-element" data-v-07e5cb5e> 
+                    <div class="view basic-info-element" data-v-07e5cb5e id="hot">
+                    
+                    </div>
+                  </div> 
+                  <div class="category-marker-container" data-v-07e5cb5e><!----> <!---->
+                  </div>
+                </div>
+              <div class="content" data-v-07e5cb5e>
+                <h3 class="ltitle">出处</h3>
+                <div id="come_from" class="sethuanhang"> 
+                    
+                </div>
+                <br>
+                <h3 class="ltitle">内容</h3>
+                <div id="content" class="sethuanhang">
+                    
+                </div>
+              </div> 
+              <br>
+              <div class="show image button image-instance-qfc1md5ah7p" data-v-c90e059e data-v-07e5cb5e>
+                <div class="images-2" data-v-c90e059e id="img">
+                  <div class="show-images" data-v-c90e059e>
+                  <!---->
+                  </div>
+                  <div class="show-images" data-v-c90e059e>
+                    
+                    </div>
+                    <div class="show-images" data-v-c90e059e>
+                     
+                    </div>
+                  </div>
+              </div>
+              <div class="line"></div>
+        
+              <div class="pinglun">
+                <h3 class="ltitle">吐槽</h3>
+                  <div class="usercomment">
+                    <ul id="usercomment1" class="usercomment1">                      
+                    </ul>
+                  </div>
+                  <div class="tips" id="tips2">123</div>
+                  <div class="usercomment-pinglun">
+                    <div class="usercomment-pinglun-text">
+                      <input type="text" placeholder="请输入内容" id="my_content">
+                    </div>
+                    <div class="usercomment-pinglun-tijiao">
+                      <button id="submit">
+                        发&nbsp;布
+                      </button>
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="geng" id="geng">
+      
+    </div>
+  </div>
+  </body>
+  <script src="js/md5.js"></script>
+<script src="js/stemhome.js"></script>
+<script src="js/login.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/axios-0.18.0.js"></script>
+<script src="js/jquery.min.js"></script>
+</html>

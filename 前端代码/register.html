@@ -1,0 +1,57 @@
+<html>
+    <head>
+         <title>梗百科注册</title>
+        <meta charset="UTF-8">
+        <link href="css/register.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="logo">
+            <a href="http://www.lijunxi.site:12345/index.html"><img src="image/logo.png" alt="" height="70px" width="70px"></a>
+        </div>
+        <div class="biaoyu">
+            <span class="biaoyu1">用梗</span><br>
+            <span class="biaoyu2">创造快乐</span>
+        </div>
+        <div class="register-main">
+            <div class="main-top">
+                <div>
+                    欢迎注册
+                </div>
+            </div>
+            <div class="main-center">
+                <div class="username">
+                    <span class="label">用&nbsp;户&nbsp;名&nbsp;</span>
+                    <input type="text" name="username" placeholder="请输入账号" id="username">
+                </div>
+                <div class="password">
+                    <span class="label">密&emsp;&emsp;码</span>
+                    <input type="password" name="password" placeholder="请输入密码" id="password1">
+                </div>
+                <div class="password">
+                    <span class="label">确认密码</span>
+                    <input type="password" name="password" placeholder="再次输入密码" id="password2">
+                </div>
+                <div class="captcha">
+                    <div>
+                        <span class="label">验&nbsp;证&nbsp;码&nbsp;</span>
+                    </div>
+                    <div>
+                        <input type="text" name="captcha" placeholder="请输入验证码" id="code">
+                    </div>
+                    <div class="captcha-img" id="my_captcha">
+                        <img  src="image/upload_white.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="tips" id="tips">密码错误</div>
+            <div class="main-low">
+                <div class="register">
+                    <button name="getcaptcha" id="regiter_btn">注册</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/register.js"></script>
+    <script src="js/axios-0.18.0.js"></script>
+    <script src="js/md5.js"></script>
+</html>

@@ -1,0 +1,115 @@
+<html>
+    <head>
+         <title>梗百科</title>
+        <link href="css/addstem.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    </head>
+    <body>
+        <div class="addstem-main">
+           <div class="geng-main">
+                <div class="geng-topic">
+                    <div class="content">
+                        <input type="text" name="content" placeholder="词条标题" id="title">
+                    </div>
+                </div>
+                <hr class="topic-hr">
+                <div class="geng-content">
+                    <div class="content-tool">
+                        <button name="button-edit"  data-name="fontsize" data-value="5">大字体</button>
+                        <button name="button-edit"  data-name="bold">加粗</button>
+                        <button name="button-edit"  data-name="italic">斜体</button>    
+                        <button name="button-edit"  data-name="underline">下划线</button>  
+                        <button name="button-edit"  data-name="removeFormat">清空格式</button> 
+                        <button name="button-edit"  data-name="createlink" data-value="http://">增加链接</button>
+                    </div>
+                    <div class="content">
+                        <div id="edit" name="edit" contenteditable="true" placeholder="词条内容" class="my_content"></div>
+                        <div id="edit" name="edit" contenteditable="true" placeholder="词条出处" class="come_from"></div>
+                    </div>
+                    
+                </div>
+                <div class="geng-image">
+                    <div class="productDrawingBox">
+                         <div class="productImg">
+                            <div id="uploadBox">
+                            </div> 
+                            <div class="uploadDIv">
+                                 <span>+</span><input type="file" name="file" multiple id="inputs" accept="image/*" class='fileTest' multiple="multiple" />
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+                <hr class="content-hr">
+                <div class="geng-lable">
+                    <div class="content">
+                        <span>#</span>
+                        <input type="text" name="lable" placeholder="词条标签" id="category">
+                    </div>
+                    <div class="content">
+                        <span>#</span>
+                        <input type="text" name="lable" placeholder="词条年份" id="year">
+                    </div>
+                    <div class="tips">
+                        <span class="content-tips-num" id="tips">0</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="geng-target">
+                <div>
+                    <ul>
+                        <li>
+                            <button class="empty" id="my_clear">清空</button>
+                        </li>
+                        <li>
+                            <button class="post" id="submit">发布</button>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/addstem.js"></script>
+        <script type="text/javascript" src="js/axios-0.18.0.js"></script>
+        <script type="text/javascript" src="js/upload-image.js"></script>
+        <script>
+            window.onload = function(){
+                 edit.focus();
+                 document.execCommand("formatblock", false, "");
+             }
+            
+           edit.onkeydown = function(){
+                   var str = edit.innerHTML;
+                   var val = str.search(/<\/li>/i);
+                   if(val < 0){
+                         document.execCommand("formatblock", false, "");
+                   }
+             }
+         
+           var btns = document.getElementsByName('button-edit');
+           for(var i = 0; i < btns.length; i++){
+               btns[i].onclick = function(){
+                       if(this.getAttribute('data-value') == ""){
+                           document.execCommand(this.getAttribute('data-name'));
+                       }else{
+                           document.execCommand(this.getAttribute('data-name'),false,this.getAttribute('data-value'));
+                       }
+                   }
+               }
+   
+             function showContent() {
+                   alert(edit.innerHTML);
+               }
+               
+            function isPaste(){
+                     if(document.execCommand("paste")) {
+                            alert("浏览器支持或开启了paste粘贴命令！");
+                       }else{
+                            alert("浏览器不支持paste粘贴命令，\n或未在user.js配置文件中开启！");
+                       }
+               }
+           </script>
+    
+    </body>
+</html>

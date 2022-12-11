@@ -1,0 +1,198 @@
+*{
+    margin: 0px;
+}
+
+/*第一部分*/
+body{
+    background-color: #f2f6f9;
+}
+.top-nav{
+    height: 45%;
+    width: 100%;
+    background-image:url(../image/1.jpeg);
+    background-size: 50% 100%;
+}
+.top-search{
+    height: 75%;
+    width: 43%;
+    position: relative;
+    left: 48%;
+    top: 20%;
+    overflow: hidden;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow:rgb(135, 125, 125) 0px 1px 1px 0px,rgb(71, 70, 70) 0px 1px 0px 0px;
+}
+.top-search-part1{
+    margin: 0% 5%;
+    position: relative;
+    top: 5%;
+    box-shadow: rgb(238, 228, 228) 0px 1px 0px 0px ;
+    padding: 10px 0px;
+}
+.top-search-part1-remen{
+    position: relative;
+    left: 3%;
+    font-family: "黑体";
+    font-weight: bolder;
+    font-size: 19px;
+    color: rgb(68, 65, 65);
+}
+.top-search-part1-gengduo {
+    position: absolute;
+    left: 85%;
+    font-family: "黑体";
+    top: 32%;
+    font-weight:bold;
+    font-size: medium;
+    
+}
+.top-search-part1-gengduo a{
+    text-decoration: none;
+    color: rgb(204, 115, 115);
+}
+.top-search-part2{
+    position: relative;
+    top: 3%;
+    left: 9%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.top-search-part2 .part2-item{
+    padding: 15px 5px;
+    float: left;
+    font-size: medium;
+    font-weight: 150;
+    overflow: hidden;
+}
+.top-search-part2 .num{
+    font-weight: bolder;
+    font-size: x-large;
+    color: rgb(231, 231, 62);
+    float: left;
+}
+.top-search-part2 .content{
+    position: relative;
+    float:left;
+    left: 7%;
+    top: 0%;
+}
+.top-search-part2 .text{
+    position: relative;
+    left: 0%;
+    float:left;
+}
+.top-search-part2 .text2{
+    position: relative;
+    left: 0%;
+    font-size: small;
+    color:rgb(202, 198, 198);
+}
+.top-search-part2 .text a{
+    text-decoration: none;
+    color: rgb(40, 24, 24);
+}
+
+/*第二部分*/
+
+.nav-geng{
+    height: 150%;
+    width: 100%;
+    background-color: #f2f6f9;
+}
+.activity{
+    width: 85%;
+    height: 25%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+    top: 3%;
+}
+.activity .activity-part1-item{
+    margin: 0px 15px;
+    padding: 15px;
+    float: left;
+    background-color: rgb(236, 225, 225);
+    box-shadow: rgb(201, 196, 196) 0px 1px 1px 0px;
+    border-radius: 2px;
+}
+.activity .text{
+    font-size: large;
+    font-weight: bolder;
+    font-family: "黑体";
+    
+}
+.nav-geng{
+    height: 150%;
+    width: 100%;
+    background-color: #f2f6f9;
+}
+.nav-geng .geng{
+    width: 82%;
+    height: 113%;
+    position: relative;
+    top: 5%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: 300px 200px 100px 200px 200px 200px;
+    grid-gap: 15px;
+    background-color: #f2f6f9;
+    padding: 10px;
+    overflow: hidden;
+}
+.nav-geng .geng > div{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    border-radius: 2px;
+    cursor:pointer;
+}
+.geng > div:hover{
+  
+    box-shadow: rgb(214, 204, 204) 2px 2px 2px 2px  ;
+   
+}
+.geng-part1-item{
+    grid-column: 1 / span 2;
+}
+.geng-part8-item{
+    grid-row: 3 / span 2;
+}
+.geng-part9-item{
+    grid-area: 2 / 2 / 4 / 4 ;
+}
+.geng-part3-item{
+    grid-area: 1 / 4 / 4 / 6 ;
+}
+.geng-part5-item{
+    grid-area: 1 / 7 / 3 / 9 ;
+}
+.geng-part10-item{
+    grid-area: 3 / 6 / 5 / 9 ;
+}
+.geng-part11-item{
+    grid-area: 4 / 2 / 4 / 6;
+}
+.geng-part12-item{
+    grid-area: 5 / 1 / 7 / 3;
+}
+.geng-part14-item{
+    grid-area: 5 / 4 / 7 / 4;
+}
+.geng-part15-item{
+    grid-area: 5 / 7 /  7/ 9;
+}
+.geng-part16-item{
+    grid-area: 5 / 5 /  5/ 7;
+}
+.geng-part17-item{
+    grid-area: 6 / 5 /  6/ 7;
+}
+.nav-low{
+    background-color: #f2f6f9;
+    height: 10%;
+}

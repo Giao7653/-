@@ -1,0 +1,167 @@
+body{
+    background-image:url('../image/10.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+.register-main{
+    width: 400px;
+    height: 550px;
+    position: relative;
+    left: 65%;
+    top: 10%;
+    min-width: 400px;
+    min-height: 550px;
+    background-color: rgb(248, 242, 242);
+    border-radius: 20px;
+    -webkit-filter: opacity(90%);   /*设置透明度   blur还可以改变照片的模糊度*/
+    filter: opacity(90%);
+    z-index: 2;   
+    padding: 0px 0px 0px 55px;        
+}
+.main-top{
+    position: relative;
+    top: 8%;
+    height: 20%;
+    left: -28px;
+    
+}
+.main-top div{
+    position: relative;
+    font-family: "黑体";
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.main-center{
+    position: relative;
+    width: auto;
+    height: 55%;
+    display: grid;
+    padding: 20px 20px 20px 0px;
+
+}
+.main-center div{
+    font-size: medium;
+    color: rgb(161, 157, 157);
+}
+.main-center span{
+    margin-right:10px ;
+}
+
+.username input,.password input,.email input{
+    /* width: 70%;
+    height: 70%;
+    border-radius: 5px;
+    background-color:  rgb(255, 255, 255);*/
+    border: none;
+    outline: none; 
+    caret-color: #4e6ef2;
+    position: relative;
+    z-index: 17;
+    box-sizing: border-box;
+    /* display: block; */
+    padding: 10px 20px;
+    margin: auto;
+    width: 250px;
+    border: 1px solid #b8b8b8;
+    font-size: 17px;
+    color: #1f1f1f;
+    transition: .3s;
+    font-family: PingFangSC-Regular,Tahoma,Helvetica,"Microsoft Yahei","微软雅黑",Arial,STHeiti;
+    border-radius: 8px;
+}
+.captcha input{
+    width: 60%;
+    height: 70%;    
+    border-radius: 5px;
+    background-color:  rgb(255, 255, 255);
+    border: 1px solid #b8b8b8;
+    margin: 0px 0px 0px 5px;
+    box-shadow: none;
+    outline: none;
+}
+.main-low {
+   position: relative;
+    width: 100%;
+    height: auto;
+   
+}
+.main-low .register{
+    width: 100%;
+    position: relative; 
+
+}
+.register button{
+    cursor:pointer;
+    font-size: larger;
+    background-color: rgb(148, 171, 229);
+    color: #fff;
+    font-weight: 400;
+    width: 88%;
+    border-radius: 20px;
+    border: none;
+    height: 10%;
+}
+
+.captcha{
+    height: 60px;
+    overflow: hidden;
+}
+.captcha div{
+    border: 2px red;
+    position: relative;
+    float: left;
+    height: 60px;
+}
+.captcha div span{
+    vertical-align:middle;
+    position: relative;
+    top: 12px;
+}
+.captcha-img{
+    position: relative;
+    left: -60px;
+    width: 80px;
+    height: 20px;  
+}
+.captcha img{
+    height: 42px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+    margin: 0px 0px;
+}
+.tips{
+    text-align: center;
+    visibility:hidden;
+    /* margin-left: 141px; */
+    color: red;
+    margin-top: -47px;
+    margin-bottom: 15px;
+}
+
+.biaoyu{
+    float: left;
+    top: 420px;
+    position: relative;
+    left: 216px;
+    z-index: 9900;
+}
+.biaoyu1{
+    font-size: 44px;
+    font-weight: 700;
+}
+.biaoyu2{
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.logo{
+    height: 70px;
+    z-index: 500;
+    width: 70px;
+    float: left;
+    left: 90px;
+    position: relative;
+    top: 40px;
+}

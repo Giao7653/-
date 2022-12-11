@@ -1,0 +1,2 @@
+INSERT INTO `auth_user` VALUES (1, 'pbkdf2_sha256$260000$eekRm9PJBeEiMLIAk3SibW$Puk0cSS7yZgGeG1WoULocmH/Gjs0ut2oP/3Fr6Lxre8=', '2022-12-9 08:05:08', 1, 'lijunxi', '', '', '666@qq.com', 1, 1, '2022-12-6 04:31:39');
+INSERT INTO `auth_user` VALUES (2, 'pbkdf2_sha256$260000$dxI3J4fNMhHkozL4UPLkEw$HB9ENiKlbIt0cuLGpqfh68OxFX0HckqVUzxq0Ee+osU=', '2022-12-7 07:43:32', 0, 'heyubi', '', '', '', 1, 1, '2022-12-6 04:33:00');
